@@ -1,5 +1,4 @@
 import { Grid } from "@mui/material";
-import Image from "next/image";
 
 import React, { FC } from "react";
 import { ImgBox } from "./style";
@@ -11,7 +10,7 @@ interface Props {
 const Tools: FC<Props> = ({ valued }) => {
   return (
     <Grid item xs={6} sm={3} md={3} lg={1} display="flex">
-      <ImgBox component="img" src={valued.pic} alt="" />{" "}
+      <img src={valued.pic} alt="" />
     </Grid>
   );
 };

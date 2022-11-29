@@ -1,5 +1,4 @@
 import { Box, Typography, Grid } from "@mui/material";
-import React from "react";
 // import { useSelector } from "react-redux";
 // import { selectTranslations } from "redux/slices/i18nSlice";
 import { styled } from "@mui/material/styles";

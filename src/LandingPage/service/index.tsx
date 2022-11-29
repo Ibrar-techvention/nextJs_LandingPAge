@@ -1,4 +1,3 @@
-import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Box } from "@mui/material";
@@ -15,18 +14,19 @@ const MainBox = styled(Box)({
     flexDirection: "column",
     paddingBottom: "0.5rem",
 });
-;
-
+const Containerr = styled(Box)({
+    width: "100%",
+    margin: "auto",
+    paddingBottom: "3rem",
+});
 const Services = () => {
- 
-  
     return (
-        <Box sx={{ width: "100%", margin: "auto" }}>
+        <Containerr>
             <MainBox>
                 <Main />
             </MainBox>
             <AllServices />
-        </Box>
+        </Containerr>
     );
 };
 

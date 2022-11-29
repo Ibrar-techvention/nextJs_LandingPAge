@@ -5,6 +5,7 @@ export const MainBox = styled(Box)(({ theme }) => ({
     display: "flex",
     height: "100%",
     justifyContent: "center",
+    background: "#FCFCFD",
     alignItems: "center",
     flexDirection: "column",
     [theme.breakpoints.down("md")]: {
@@ -27,7 +28,7 @@ export const BoxItem = styled(Box)({
     paddingTop: "3rem",
 });
 export const Heading = styled(Typography)(({ theme }) => ({
-    fontWeight: 550,
+    fontWeight: 500,
     fontFamily: "Poppins",
     letterSpacing: "-0.03em",
     color: "#000000",
@@ -63,6 +64,7 @@ export const PaperStyle = styled(Paper)(({ theme }) => ({
     border: "1px solid #000000",
     height: "18.75rem",
     paddingTop: "0.5rem",
+    background: "#FFFFFF",
     [theme.breakpoints.down("sm")]: {
         paddingTop: "2rem",
     },
@@ -86,7 +88,7 @@ export const ParentBox = styled(Box)(({ theme }) => ({
 }));
 export const Haeding = styled(Typography)(({ theme }) => ({
     fontSize: "1.3rem",
-    fontWeight: "bold",
+    fontWeight: 600,
     width: "2rem",
     paddingTop: "1rem",
     paddingBottom: "1rem",
@@ -101,7 +103,7 @@ export const Haeding = styled(Typography)(({ theme }) => ({
 }));
 export const Paragraph1 = styled(Typography)(({ theme }) => ({
     fontSize: "0.9rem",
-    fontWeight: "25rem",
+    fontWeight: 500,
     textAlign: "left",
     [theme.breakpoints.down("md")]: {
         textAlign: "center",
@@ -123,6 +125,7 @@ export const PaperSty = styled(Paper)(({ theme }) => ({
     borderRadius: "0.1rem",
     height: "18.75rem",
     paddingTop: "0.5rem",
+    background: "#FFFFFF",
     [theme.breakpoints.down("sm")]: {
         paddingTop: "2rem",
     },

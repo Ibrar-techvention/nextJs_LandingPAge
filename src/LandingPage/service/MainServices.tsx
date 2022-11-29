@@ -1,66 +1,119 @@
-import React from 'react';
-import { Box, Grid, Button } from '@mui/material';
-import Service from './Service';
-import { styled } from '@mui/material/styles';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Box } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import Service from "./Service";
 
 const MainBox = styled(Box)({
-    display: 'flex',
-    width: '90%',
-    margin: 'auto',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-    paddingBottom: '2rem',
+    width: "85%",
+    margin: "auto",
 });
-const GridItem = styled(Grid)({
-    width: '100%',
-    margin: 'auto',
-});
-const ButtonService = styled(Button)({
-    width: '8.563rem',
-    height: '3.2rem',
-    borderRadius: '0.5rem',
-});
-const BoxStyle = styled(Box)({
-    paddingTop: '2rem',
-});
-const AllServices = () => {
-    
-    const CardData = [
-        {
-            imgSrc: '/images/Service1.png',
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptates asperiores quam quis ab blanditiis numquam corporis provident amet quasi atque, eaque neque, reiciendis veniam et in inventore alias nam!",
-            title: "All Customers",
-            link: 'reactjs.org',
-        },
-        {
-            imgSrc: '/images/Service2.png',
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptates asperiores quam quis ab blanditiis numquam corporis provident amet quasi atque, eaque neque, reiciendis veniam et in inventore alias nam!",
-            title: "All Customers",
-            link: 'reactjs.org',
-        },
-        {
-            imgSrc: '/images/Service3.png',
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptates asperiores quam quis ab blanditiis numquam corporis provident amet quasi atque, eaque neque, reiciendis veniam et in inventore alias nam!",
-            title: "All Customers",
-            link: 'reactjs.org',
-        },
-    ];
 
+const CardData = [
+    {
+        imgSrc: "/images/ServiceOne.png",
+        text: "Lorem ipsum dolors sit amet consectetur adipisicing elit. Voluptas voluptates asperiores quam quis ab blanditiis numquam corporis provident amet quasi atque, eaque neque, reiciendis veniam et in inventore alias nam!",
+        title: "All Customerss",
+        link: "reactjs..org",
+    },
+    {
+        imgSrc: "/images/ServiceTwo.png",
+        text: "Lorem ipsum dolors sit amet consectetur adipisicing elit. Voluptas voluptates asperiores quam quis ab blanditiis numquam corporis provident amet quasi atque, eaque neque, reiciendis veniam et in inventore alias nam!",
+        title: "All Customerss",
+        link: "rectjs.org",
+    },
+    {
+        imgSrc: "/images/ServiceThree.png",
+        text: "Lorem ipsum dolors sit ameto consectetur adipisicing elit. Voluptas voluptates asperiores quam quis ab blanditiis numquam corporis provident amet quasi atque, eaque neque, reiciendis veniam et in inventore alias nam!",
+        title: "All Customersss",
+        link: "reacitjs.org",
+    },
+    {
+        imgSrc: "/images/ServiceOne.png",
+        text: "Lorem ipsum dolors sit ameta consectetur adipisicing elit. Voluptas voluptates asperiores quam quis ab blanditiis numquam corporis provident amet quasi atque, eaque neque, reiciendis veniam et in inventore alias nam!",
+        title: "All Customeras",
+        link: "reactjs.orgo",
+    },
+    {
+        imgSrc: "/images/ServiceTwo.png",
+        text: "Lorem ipsum dolors sit ameti consectetur adipisicing elit. Voluptas voluptates asperiores quam quis ab blanditiis numquam corporis provident amet quasi atque, eaque neque, reiciendis veniam et in inventore alias nam!",
+        title: "All Customers",
+        link: "reactjs.org",
+    },
+    {
+        imgSrc: "/images/ServiceThree.png",
+        text: "Lorem ipsum dolors sit amete consectetur adipisicing elit. Voluptas voluptates asperiores quam quis ab blanditiis numquam corporis provident amet quasi atque, eaque neque, reiciendis veniam et in inventore alias nam!",
+        title: "All Customers",
+        link: "reactjs.org",
+    },
+];
+const prev = {
+    display: "block",
+    background: "blue",
+    color: "Blue",
+    borderRadius: "10px",
+    marign: "5rem",
+};
+const next = {
+    display: "block",
+    background: "blue",
+    color: "Blue",
+    borderRadius: "10px",
+};
+function SampleNextArrow(props: any) {
+    const { className, onClick } = props;
+    return <Box className={className} style={next} onClick={onClick} />;
+}
+
+function SamplePrevArrow(props: any) {
+    const { className, onClick } = props;
+    return <Box className={className} style={prev} onClick={onClick} />;
+}
+const AllServices = () => {
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        autoplay: true,
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    autoplay: true,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: true,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: true,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
     return (
         <MainBox>
-            
-            <GridItem container spacing={3} justifyContent="center">
-            
+            <Slider {...settings}>
                 {CardData.map((val, index) => (
-                    <Grid item sm={12} md={4} lg={4} key={index}>
-                        <Service valued={val} isActive={index} key={index} />
-                    </Grid>
+                    <Service valued={val} isActive={index} />
                 ))}
-            </GridItem>
-            <BoxStyle>
-                <ButtonService variant="contained">See All</ButtonService>
-            </BoxStyle>
+            </Slider>
         </MainBox>
     );
 };

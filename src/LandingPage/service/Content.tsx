@@ -1,11 +1,12 @@
-import React from "react";
 import { styled } from "@mui/material/styles";
 import { Box, Typography } from "@mui/material";
 
 const Heading = styled(Typography)(({ theme }) => ({
-    fontWeight: "bold",
+    fontWeight: 500,
     fontSize: "2.625rem",
     textAlign: "center",
+    letterSpacing: "-0.03em",
+    color: "#000000",
     [theme.breakpoints.down("md")]: {
         fontSize: "1.2rem",
     },

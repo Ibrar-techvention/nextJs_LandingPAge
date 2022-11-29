@@ -1,5 +1,4 @@
 /* eslint-disable react/no-array-index-key */
-import React from "react";
 import { Grid, Typography } from "@mui/material";
 import PlanMap from "./Content";
 import ListMap from "./List";
@@ -36,7 +35,6 @@ const PricingPlan = () => {
                 {
                     item: " Lorem ipsum dolors sit amet consectetur ",
                 },
-              
             ],
         },
 
@@ -58,18 +56,17 @@ const PricingPlan = () => {
                 {
                     item: " Lorem ipsum dolor siit amet consectetur ",
                 },
-               
             ],
         },
     ];
 
     return (
         <MainBox>
-            <Headings>Price Plan</Headings>
+            <Headings>Our Price Plan</Headings>
             <Paragraph textAlign="center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-                inventore perferendis aliquid illum natus voluptatem nihil
-                recusandae necessitatibus soluta dolore quod pariatur
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae; Ut nec turpis tristique, egestas lacus
+                at, cursus arcu
             </Paragraph>
             <Boxes>
                 <Typography>monthly</Typography>

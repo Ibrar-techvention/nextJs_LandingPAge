@@ -1,9 +1,11 @@
 import { Box, Button, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
+export const NavBox = styled(Box)({
+    background: "url(/images/backgroundd.png)",
+});
 export const Container = styled(Box)(({ theme }) => ({
-    
-   background: "url(/images/backgroundd.png)",
+    // background: "url(/images/backgroundd.png)",
     width: "100%",
     height: "90vh",
     color: "white",
@@ -76,7 +78,7 @@ export const LeftBottomIcon = styled(Box)(({ theme }) => ({
 export const Title = styled(Typography)(({ theme }) => ({
     fontWeight: 700,
     padding: "0.2rem 0.2rem 1.5rem 0rem",
-    fontSize: "2.775rem",
+    fontSize: "2.475rem",
     fontFamily: "Poppins",
     fontStyle: "normal",
     color: "#ffffff",
@@ -98,7 +100,7 @@ export const Title = styled(Typography)(({ theme }) => ({
 }));
 export const Description = styled(Typography)(({ theme }) => ({
     fontWeight: 400,
-    fontSize: "1.15rem",
+    fontSize: "1.05rem",
     fontFamily: "Inter",
     fontStyle: "normal",
     lineHeight: "1.9rem",
@@ -113,7 +115,6 @@ export const Description = styled(Typography)(({ theme }) => ({
 }));
 export const ButtonText = styled(Button)(({ theme }) => ({
     color: "#f3f3f3",
-    background: "#00B8D9",
     borderRadius: "0.625rem",
     fontWeight: "bold",
     width: "9rem",
@@ -162,7 +163,7 @@ export const IconBox = styled(Box)(({ theme }) => ({
 }));
 export const ImageBox = {
     paddingTop: {
-        xl: "4erm",
+        xl: "4rem",
         lg: "1.5rem",
         md: "0.5rem",
         sm: "0.5rem",

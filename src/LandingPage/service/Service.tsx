@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import { Typography, Button, Box } from "@mui/material";
+import { FC } from "react";
+import { Typography, Button } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 
@@ -8,7 +8,10 @@ interface Props {
     isActive: number;
 }
 const Paperr = styled(Paper)({
-    padding: "15px",
+    padding: "1rem",
+});
+const ReadButton = styled(Button)({
+    padding: "0.2rem",
 });
 const TypoGraphyy = styled(Typography)({
     fontSize: "1.7rem",
@@ -21,22 +24,14 @@ const ImageBox = styled("img")({
 });
 const Service: FC<Props> = ({ valued, isActive }) => {
     return (
-        <Box>
-            <Paperr key={isActive} elevation={1}>
-                <ImageBox src={valued.imgSrc} alt="" />
-                <TypoGraphyy>{valued.title}</TypoGraphyy>
-                <br />
-                <Typography p={2}>{valued.text}</Typography>
+        <Paperr key={isActive} elevation={1}>
+            <ImageBox src={valued.imgSrc} alt="" />
+            <TypoGraphyy>{valued.title}</TypoGraphyy>
 
-                <Button
-                    sx={{
-                        padding: "5px",
-                    }}
-                >
-                    read more
-                </Button>
-            </Paperr>
-        </Box>
+            <Typography p={2}>{valued.text}</Typography>
+
+            <ReadButton>read more</ReadButton>
+        </Paperr>
     );
 };
 

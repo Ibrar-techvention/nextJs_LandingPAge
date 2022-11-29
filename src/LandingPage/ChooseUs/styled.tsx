@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 export const Container = styled(Box)(({ theme }) => ({
     width: "100%",
     display: "flex",
+    background: "#FCFCFD",
     padding: "2rem 0rem 1rem 0rem",
     [theme.breakpoints.down("sm")]: {
         display: "block",
@@ -12,14 +13,13 @@ export const Container = styled(Box)(({ theme }) => ({
 
 export const Wrapper = styled(Paper)({
     borderRadius: "0.8rem",
-    background:
-        "linear-gradient(180deg, rgba(112, 99, 214, 0.18) 0%, rgba(112, 99, 214, 0.026) 75.78%, rgba(146, 136, 224, 0.199219) 99.99%, rgba(35, 46, 209, 0.2) 100%, rgba(112, 99, 214, 0.2) 100%)",
+    background: "#FFFFFF",
+    border: "0.188rem solid #00B8D9",
 });
 
 export const Wrappers = styled(Paper)({
     borderRadius: "0.8rem",
-    background:
-        "linear-gradient(180deg, rgba(234, 124, 105, 0.094) 0%, rgba(234, 124, 105, 0.2) 100%)",
+    border: "0.188rem solid #00B8D9",
 });
 export const RightItem = styled(Box)(({ theme }) => ({
     display: "flex",
@@ -84,34 +84,34 @@ export const LeftBox = styled(Box)(({ theme }) => ({
 }));
 
 export const Title = styled(Typography)(({ theme }) => ({
-    fontWeight: 700,
+    fontWeight: 500,
     fontSize: "2.75rem",
     fontFamily: "Poppins",
     fontStyle: "normal",
     lineHeight: "120%",
-    letterSpacing: "-0.006em",
+    letterSpacing: "-0.02em",
     [theme.breakpoints.down("lg")]: {
-        fontSize: "2.6rem",
+        fontSize: "2.5rem",
     },
     [theme.breakpoints.down("sm")]: {
         fontSize: "2rem",
         marginTop: "0",
     },
     [theme.breakpoints.up("xl")]: {
-        fontSize: "5rem",
+        fontSize: "3rem",
         marginTop: "0",
     },
 }));
 export const Description = styled(Typography)(({ theme }) => ({
     fontWeight: 400,
-    fontSize: "1.25rem",
+    fontSize: "1.15rem",
     fontFamily: "Inter",
     fontStyle: "normal",
     lineHeight: "1.9rem",
     marginTop: "1rem",
     letterSpacing: "-0.003em",
     [theme.breakpoints.up("xl")]: {
-        fontSize: "2.25rem",
+        fontSize: "1.75rem",
     },
 }));
 

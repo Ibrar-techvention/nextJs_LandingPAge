@@ -6,7 +6,7 @@ export const Grids = styled(Grid)({
     margin: "auto",
 });
 export const Paperss = styled(Paper)({
-    background: "#EA7C69",
+    background: "#F05A22",
     boxShadow: " 0px 10px 56px rgba(0, 0, 0, 0.05)",
     color: "#f3f3f3",
     borderRadius: "0.875rem",
@@ -19,7 +19,7 @@ export const Switches = styled(Switch)({
     fontSize: "2rem",
 });
 export const MainBox = styled(Box)({
-    paddingBottom: "1rem",
+    padding: "2.5rem 0rem 2.5rem 0rem",
 });
 export const Boxes = styled(Box)({
     display: "flex",
@@ -28,18 +28,19 @@ export const Boxes = styled(Box)({
     padding: "2rem",
 });
 export const Headings = styled(Typography)(({ theme }) => ({
-    fontWeight: "bold",
+    fontWeight: 500,
     fontSize: "3.1rem",
     height: "5.125rem",
     textAlign: "center",
     letterSpacing: "-0.03em",
+    color: "#000000",
     [theme.breakpoints.down("md")]: {
         fontSize: "1.2rem",
     },
 }));
 export const Paragraph = styled(Typography)(({ theme }) => ({
     fontSize: "1.125rem",
-    width: "34.938rem",
+    width: "49.938rem",
     margin: "auto",
     fontWeight: "500",
     color: "#5B5B5B",
@@ -105,7 +106,7 @@ export const Text = styled(Typography)({
 export const Buttons = styled(Button)({
     padding: "1rem",
     textAlign: "center",
-    backgroundColor: "#EA7C69",
+    backgroundColor: "#F05A22",
     borderRadius: "1rem",
     width: "100%",
     fontWeight: "bold",

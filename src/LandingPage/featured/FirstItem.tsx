@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Haeding, LogoBox, PaperStyle, Paragraph1, ParentBox } from "./style";
 
 interface Props {

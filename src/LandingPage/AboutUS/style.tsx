@@ -1,84 +1,70 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-export const Containerr = styled(Box)(({ theme }) => ({
-  background: "#F8F8FC",
-  width: "100%",
-  height: "100vh",
-  paddingTop: "2rem",
-  [theme.breakpoints.down("sm")]: {
-    height: "100%",
-  },
-}));
-export const ButtonBox = styled(Button)(({ theme }) => ({
-  marginTop: "2rem",
-  marginBottom: "2rem",
-  width: "9rem",
-  borderRadius: "1rem",
-  [theme.breakpoints.up("xl")]: {
-    width: "15rem",
-    height: "6rem",
-    fontSize: "2rem",
-  },
-}));
-export const MainBox = styled(Box)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  width: "25rem",
-  paddingTop: "3rem",
-  [theme.breakpoints.down("lg")]: {
-    width: "18rem",
-  },
-  [theme.breakpoints.down("sm")]: {
-    width: "24rem",
+export const Container = styled(Box)({
+    display: "flex",
+    alignItems: "center",
+    backgroundImage: "url(/images/aboutImgs.png)",
+    backgroundRepeat: "no-repeat",
+    objectFit: "cover",
+    backgroundSize: "cover",
+    justifyContent: "center",
+    height: "90vh",
+    width: "80%",
     margin: "auto",
-  },
-  [theme.breakpoints.up("xl")]: {
-    width: "38rem",
-  },
-}));
-export const ImgBoxes = styled(Box)(({ theme }) => ({
-  background: `url("/images/Ellipse 265.png")`,
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "right",
-  height: "90vh",
-  [theme.breakpoints.down("sm")]: {
-    background: `none`,
-  },
-}));
-export const BoxItems = styled(Box)(({ theme }) => ({
-  width: "90%",
-  margin: "auto",
-  display: "flex",
-  paddingTop: "3rem",
-  [theme.breakpoints.down("sm")]: {
-    flexDirection: `column`,
-  },
-}));
-export const LeftBox = styled(Box)({
-  width: "100%",
-  display: "flex",
+    position: "relative",
 });
-export const Root = styled(Typography)(({ theme }) => ({
-  fontSize: "3.2rem",
-  fontWeight: 700,
-  [theme.breakpoints.down("md")]: {
-    fontSize: "2rem",
-  },
+export const OverlayBox = styled(Box)({
+    position: "absolute",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.56)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+});
+export const TypographyText = styled(Typography)({
+    fontSize: "0.75rem",
+    paddingBottom: "0.7rem",
+});
+export const ButtonText = styled(Button)({
+    fontSize: "0.95rem",
+    paddingBottom: "0.7rem",
+    paddingTop: "1.9rem",
+    color: "#F05A22",
+    textAlign: "center",
+});
 
-  [theme.breakpoints.up("xl")]: {
-    fontSize: "4.8rem",
-  },
-}));
-export const TypographyText = styled(Typography)(({ theme }) => ({
-  display: "flex",
-  [theme.breakpoints.up("xl")]: {
-    fontSize: "2rem",
-  },
-}));
+export const Boxes = styled(Box)(({ theme }) => ({
+    display: "flex",
+    color: "white",
+    width: "40rem",
+    alignItems: "center",
+    flexDirection: "column",
+    justifyContent: "center",
+    [theme.breakpoints.down("md")]: {
+        padding: "0rem 4rem 1rem 4rem",
+    },
 
-export const sliderImages = {
-  width: { sm: "70%", lg: "50%", md: "50%", xl: "100%" },
-  objectFit: "cover",
-  display: "flex",
-};
+    [theme.breakpoints.down("sm")]: {
+        padding: "0rem 2rem 1rem 2rem",
+    },
+}));
+export const Heading = styled(Typography)({
+    fontWeight: 600,
+    fontSize: "2.7rem",
+    paddingBottom: "0.9rem",
+    "&:hover": {
+        transform: "scale(1.2)",
+    },
+});
+export const Paragraph = styled(Typography)({
+    fontWeight: 500,
+    fontSize: "1rem",
+    height: "6.125rem",
+    width: "35.138rem",
+    color: "#FFFFFF",
+    display: "flex",
+});

@@ -18,11 +18,31 @@ const FeaturedService = () => {
         {
             image: "/images/ThirdFeature.png",
             text: "Loremss ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consecte",
-            heading: "Finance Update",
+            heading: "Finance  Update",
         },
         {
             image: "/images/FourthFeature.png",
             text: "Loremss ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consecte",
+            heading: "HR  Managment",
+        },
+        {
+            image: "/images/ThirdFeature.png",
+            text: "Loremss ipsum dolor sit amet conseetetur adipisicing elit. Cupiditate consecte",
+            heading: "Finance Update",
+        },
+        {
+            image: "/images/FourthFeature.png",
+            text: "Loremss ipsum dolor sit amet consictetur adipisicing elit. Cupiditate consecte",
+            heading: "HR Managment",
+        },
+        {
+            image: "/images/ThirdFeature.png",
+            text: "Loremss ipsum dolor sit amit consectetur adipisicing elit. Cupiditate consecte",
+            heading: "Finance Update",
+        },
+        {
+            image: "/images/FourthFeature.png",
+            text: "Loremss ipsum dolor sit amei consectetur adipisicing elit. Cupiditate consecte",
             heading: "HR Managment",
         },
     ];
@@ -30,7 +50,7 @@ const FeaturedService = () => {
     return (
         <MainBox>
             <Main />
-            <GridItem container columnSpacing={3} rowSpacing={2}>
+            <GridItem container columnSpacing={3} rowSpacing={4}>
                 {chooseData.map((val, index) => (
                     <Items valued={val} isActive={index > 0} key={index} />
                 ))}

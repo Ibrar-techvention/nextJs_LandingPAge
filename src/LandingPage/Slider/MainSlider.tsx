@@ -2,8 +2,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef, useState } from "react";
+import Navbar from "src/mainlayout/Navbar";
 import Content from "./Content";
-import { BoxDot, BoxDot1 } from "./style";
+import { BoxDot, BoxDot1, NavBox } from "./style";
 
 const MainSlider = () => {
     const sliderRef = useRef<never>(null);
@@ -26,11 +27,14 @@ const MainSlider = () => {
         beforeChange: before,
     };
     return (
-        <Slider ref={sliderRef} {...settings}>
-            {[1, 2, 3].map(index => (
-                <Content key={index} />
-            ))}
-        </Slider>
+        <NavBox>
+            <Navbar />
+            <Slider ref={sliderRef} {...settings}>
+                {[1, 2, 3].map(index => (
+                    <Content key={index} />
+                ))}
+            </Slider>
+        </NavBox>
     );
 };
 

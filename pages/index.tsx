@@ -1,5 +1,5 @@
-import AboutUss from "src/LandingPage/AboutUs";
-import Services from "src/LandingPage/service";
+import AboutUss from "../src/LandingPage/AboutUs";
+import Services from "../src/LandingPage/service";
 import ChooseUs from "../src/LandingPage/ChooseUs";
 import FavouriteTools from "../src/LandingPage/FavouriteTools";
 import FeaturedService from "../src/LandingPage/featured";

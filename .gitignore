@@ -36,3 +36,6 @@ yarn-error.log*
 
 /.vscode
 .husky
+.eslintrc
+.lintstagerc.js
+.prettierrc

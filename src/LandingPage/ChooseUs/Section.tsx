@@ -15,8 +15,6 @@ const Section = () => {
       <LeftBox>
         <Grid
           container
-          // rowSpacing="0.4rem"
-          // columnSpacing="1.2rem"
           rowSpacing={{ xs: 5, sm: 1.3, md: 1.33, lg: 1.33 }}
           columnSpacing={{ xs: 1, sm: 1, md: 2, lg: 2.1 }}
           justifyContent="center"

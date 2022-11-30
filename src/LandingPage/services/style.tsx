@@ -8,7 +8,7 @@ export const Container = styled(Box)({
 });
 export const MainBox = styled(Box)({
   display: "flex",
-  width: "100%",
+  width: "80%",
   margin: "auto",
   justifyContent: "center",
   alignItems: "center",
@@ -38,12 +38,12 @@ export const MiniHeading = styled(Typography)(({ theme }) => ({
 }));
 export const Paragraph = styled(Typography)(({ theme }) => ({
   fontSize: "1.1rem",
-  width: "38.938rem",
+  maxWidth: "38.938rem",
+  display: "flex",
   color: "#5B5B5B",
 
   [theme.breakpoints.down("md")]: {
     fontSize: "0.8rem",
-    width: "22rem",
     paddingTop: "2rem",
   },
 }));
@@ -68,36 +68,33 @@ export const ImageBox = styled("img")({
   objectFit: "cover",
   width: "100%",
 });
-const prev = {
-  display: "block",
-  background: "blue",
-  color: "Blue",
-  borderRadius: "10px",
-  marign: "5rem",
-};
-const next = {
-  display: "block",
-  background: "blue",
-  color: "Blue",
-  borderRadius: "10px",
-};
-function SampleNextArrow(props: any) {
-  const { className, onClick } = props;
-  return <Box className={className} style={next} onClick={onClick} />;
-}
-
-function SamplePrevArrow(props: any) {
-  const { className, onClick } = props;
-  return <Box className={className} style={prev} onClick={onClick} />;
-}
+export const Previous = styled(Box)(({ theme }) => ({
+  position: "absolute",
+  top: "40%",
+  left: "-3rem",
+  zIndex: 10,
+  cursor: "pointer",
+  [theme.breakpoints.down("sm")]: {
+    left: "-1.3rem",
+  },
+}));
+export const Next = styled(Box)(({ theme }) =>({
+  position: "absolute",
+        top: "40%",
+        right: "-3rem",
+        zIndex: 10,
+        cursor: "pointer",
+        [theme.breakpoints.down("sm")]: {
+          right: "-1.3rem"
+        },
+}));
 export const settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 3,
   autoplay: true,
   slidesToScroll: 1,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
+  arrows: false,
   responsive: [
     {
       breakpoint: 1024,

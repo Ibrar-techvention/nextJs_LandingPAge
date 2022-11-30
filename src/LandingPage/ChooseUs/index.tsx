@@ -1,10 +1,13 @@
+import { Fragment } from "react";
 import Features from "./Features";
 import Section from "./Section";
-import { Container, Left, Right } from "./styled";
+import { Container, FragmentBox, Left, Right } from "./styled";
 
 const ChooseUs = () => {
     return (
+        <FragmentBox>
         <Container>
+           
             <Left>
                 <Features />
             </Left>
@@ -13,6 +16,7 @@ const ChooseUs = () => {
                 <Section />
             </Right>
         </Container>
+        </FragmentBox>
     );
 };
 

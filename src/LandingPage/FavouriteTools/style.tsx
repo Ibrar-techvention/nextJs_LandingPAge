@@ -5,22 +5,22 @@ import { Grid, Box, Typography } from "@mui/material";
 
 export const Container = styled(Box)(({ theme }) => ({
     height: "100%",
-    width: "90%",
+    maxWidth: "80rem",
     margin: "auto",
     padding: "1rem 0rem 3rem 0rem",
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("lg")]: {
         display: "none",
         padding: "2rem 1rem 2rem 0rem",
     },
 }));
 export const MainBox = styled(Box)({
-    padding: "1rem",
+    padding: "2rem",
 });
 export const TypographyText = styled(Typography)({
     padding: "2rem 0rem 2rem 0rem",
 });
 export const Gridd = styled(Grid)(({ theme }) => ({
-    padding: "1rem 0rem 1rem 0rem",
+    padding: "1rem 0rem 1rem 3rem",
     width: "100%",
     display: "flex",
     justifyContent: "space-between",

@@ -136,7 +136,7 @@ const Navbar = () => {
                     open={opened}
                     onClose={Close}
                 >
-                    <ResponsiveNav />
+                    <ResponsiveNav setOpenn={setOpen} />
                 </Drawer>
             </Boxes>
         </>

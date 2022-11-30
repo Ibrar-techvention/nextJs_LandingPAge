@@ -21,8 +21,8 @@ export const ButtonStyle: any = styled(Button)(({ theme }) => ({
 export const MainBox: any = styled(Box)(({ theme }) => ({
   paddingTop: "1rem",
   paddingBottom: "1rem",
-
-  width: "92%",
+  width: "100%",
+  maxWidth: "88%",
   margin: "auto",
   [theme.breakpoints.down("sm")]: {
     paddingTop: "0rem",
@@ -184,8 +184,8 @@ export const Buttons: any = styled(Button)({
 export const Lists = styled(List)({
   height: "20rem",
   display: "flex",
-  marginTop: "5rem",
+  marginTop: "2rem",
   flexDirection: "column",
   alignItems: "flex-start",
-  paddingLeft: "3rem",
+  paddingLeft: "1rem",
 });

@@ -1,13 +1,39 @@
 import { Box, Typography, Paper } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
+
+export const FragmentBox = styled(Box)({
+  background: "#FCFCFD",
+
+})
 export const Container = styled(Box)(({ theme }) => ({
   width: "100%",
+  maxWidth: "82rem",
   display: "flex",
-  background: "#FCFCFD",
   padding: "4rem 0rem 2rem 0rem",
+  margin: "auto",
   [theme.breakpoints.down("sm")]: {
     display: "block",
+  },
+}));
+export const Left = styled(Box)(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.up("sm")]: {
+    width: "52%",
+  },
+}));
+
+export const Right = styled(Box)(({ theme }) => ({
+  display: "flex",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.up("sm")]: {
+    width: "48%",
   },
 }));
 
@@ -34,10 +60,6 @@ export const RightItem = styled(Box)(({ theme }) => ({
   textAlign: "left",
   height: "15rem",
 
-  [theme.breakpoints.up("xl")]: {
-    height: "28rem",
-  },
-
   [theme.breakpoints.down("lg")]: {
     height: "13rem",
   },
@@ -45,36 +67,9 @@ export const RightItem = styled(Box)(({ theme }) => ({
     height: "11rem",
   },
 }));
-
-export const Left = styled(Box)(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
-  },
-  [theme.breakpoints.up("sm")]: {
-    width: "50%",
-  },
-}));
-
-export const Right = styled(Box)(({ theme }) => ({
-  display: "flex",
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
-  },
-  [theme.breakpoints.up("sm")]: {
-    width: "50%",
-  },
-  [theme.breakpoints.up("xl")]: {
-    width: "100%",
-  },
-}));
 export const TypographyText = styled(Box)(({ theme }) => ({
   fontSize: "1.25rem",
 
-  [theme.breakpoints.up("xl")]: {
-    fontSize: "1.7rem",
-  },
   [theme.breakpoints.down("sm")]: {
     textAlign: "center",
     padding: "0.5rem 0rem 1rem 0rem",
@@ -83,9 +78,7 @@ export const TypographyText = styled(Box)(({ theme }) => ({
 export const LeftBox = styled(Box)(({ theme }) => ({
   width: "80%",
   margin: "auto",
-  [theme.breakpoints.up("xl")]: {
-    width: "70%",
-  },
+
 }));
 
 export const Title = styled(Typography)(({ theme }) => ({
@@ -103,10 +96,6 @@ export const Title = styled(Typography)(({ theme }) => ({
     marginTop: "0",
     textAlign: "center",
   },
-  [theme.breakpoints.up("xl")]: {
-    fontSize: "3rem",
-    marginTop: "0",
-  },
 }));
 export const Description = styled(Typography)(({ theme }) => ({
   fontWeight: 400,
@@ -116,9 +105,6 @@ export const Description = styled(Typography)(({ theme }) => ({
   lineHeight: "1.9rem",
   marginTop: "1rem",
   letterSpacing: "-0.003em",
-  [theme.breakpoints.up("xl")]: {
-    fontSize: "1.75rem",
-  },
   [theme.breakpoints.down("sm")]: {
     fontSize: "0.7rem",
     textAlign: "center",
@@ -141,10 +127,6 @@ export const RightBoxText = styled(Box)(({ theme }) => ({
 
     paddingTop: "2rem",
   },
-  [theme.breakpoints.up("xl")]: {
-    width: "0rem",
-    fontSize: "2.5rem",
-  },
 }));
 export const DownBoxText = styled(Box)(({ theme }) => ({
   fontSize: "1.5rem",
@@ -160,9 +142,5 @@ export const DownBoxText = styled(Box)(({ theme }) => ({
     width: "0rem",
     fontSize: "1.5rem",
     paddingTop: "2rem",
-  },
-  [theme.breakpoints.up("xl")]: {
-    width: "0rem",
-    fontSize: "2.5rem",
   },
 }));

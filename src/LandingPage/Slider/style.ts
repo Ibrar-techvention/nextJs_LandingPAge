@@ -8,18 +8,20 @@ export const CardMediaImg = styled(CardMedia)({});
 
 export const Container = styled(Box)(({ theme }) => ({
   width: "100%",
+  maxWidth: "83rem",
   height: "85vh",
   color: "white",
   display: "flex",
+  margin: "auto",
   [theme.breakpoints.down("sm")]: {
     display: "block",
     height: "69vh",
   },
-  [theme.breakpoints.up("xl")]: {
-    height: "85vh",
-  },
+  // [theme.breakpoints.up("xl")]: {
+  //   height: "85vh",
+  // },
 }));
-export const BoxDot = styled(Box)(({ theme }) =>({
+export const BoxDot = styled(Box)(({ theme }) => ({
   width: "1.1rem",
   height: "1.1rem",
   borderRadius: "50%",
@@ -30,7 +32,7 @@ export const BoxDot = styled(Box)(({ theme }) =>({
     marginTop: "-1.5rem",
   },
 }));
-export const BoxDot1 = styled(Box)(({ theme }) =>({
+export const BoxDot1 = styled(Box)(({ theme }) => ({
   width: "1.1rem",
   height: "1.1rem",
   borderRadius: "50%",
@@ -44,13 +46,12 @@ export const BoxDot1 = styled(Box)(({ theme }) =>({
 export const Left = styled(Box)(({ theme }) => ({
   width: "50%",
   paddingTop: "3.9rem",
-  [theme.breakpoints.up("xl")]: {
-    paddingTop: "7rem",
-  },
+  // [theme.breakpoints.up("xl")]: {
+  //   paddingTop: "7rem",
+  // },
   [theme.breakpoints.down("lg")]: {
     paddingTop: "2.9rem",
     width: "55%",
-
   },
   [theme.breakpoints.down("sm")]: {
     width: "82%",
@@ -103,9 +104,6 @@ export const Title = styled(Typography)(({ theme }) => ({
   lineHeight: "120%",
   letterSpacing: "-0.006em",
 
-  [theme.breakpoints.up("xl")]: {
-    fontSize: "3.6rem",
-  },
   [theme.breakpoints.down("lg")]: {
     fontSize: "2rem",
   },
@@ -125,9 +123,6 @@ export const Description = styled(Typography)(({ theme }) => ({
   lineHeight: "1.9rem",
   color: "#f1f1f1",
   letterSpacing: "-0.003em",
-  [theme.breakpoints.up("xl")]: {
-    fontSize: "1.7rem",
-  },
   [theme.breakpoints.down("lg")]: {
     fontSize: "0.7rem",
   },
@@ -141,11 +136,7 @@ export const ButtonText = styled(Button)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  [theme.breakpoints.up("xl")]: {
-    width: "15.4rem",
-    height: "5.4rem",
-    fontSize: "1.5rem",
-  },
+
   [theme.breakpoints.down("lg")]: {
     width: "9rem",
     height: "2.4rem",
@@ -159,9 +150,7 @@ export const ButtonText = styled(Button)(({ theme }) => ({
   },
 }));
 export const Span = styled(Typography)(({ theme }) => ({
-  [theme.breakpoints.up("xl")]: {
-    fontSize: "1.15rem",
-  },
+
   [theme.breakpoints.down("lg")]: {
     fontSize: "0.9rem",
   },
@@ -179,10 +168,7 @@ export const IconBox = styled(Box)(({ theme }) => ({
   marginLeft: "2.688rem",
   justifyContent: "center",
   alignItems: "center",
-  [theme.breakpoints.up("xl")]: {
-    width: "3.7rem",
-    height: "3.7rem",
-  },
+
   [theme.breakpoints.down("lg")]: {
     width: "3.4rem",
     height: "2.4rem",
@@ -196,7 +182,7 @@ export const IconBox = styled(Box)(({ theme }) => ({
 }));
 export const ImageBox = {
   paddingTop: {
-    xl: "4rem",
+    xl: "0.4rem",
     lg: "0.2rem",
     md: "0.5rem",
     sm: "0.5rem",

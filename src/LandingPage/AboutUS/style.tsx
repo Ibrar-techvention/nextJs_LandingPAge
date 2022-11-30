@@ -10,13 +10,14 @@ export const Container = styled(Box)(({ theme }) => ({
   backgroundSize: "cover",
   justifyContent: "center",
   height: "90vh",
-  width: "80%",
+  maxWidth: "80rem",
   margin: "auto",
   position: "relative",
   [theme.breakpoints.down("sm")]: {
     width: "100%",
     height: "70vh",
   },
+
 }));
 export const OverlayBox = styled(Box)({
   position: "absolute",
@@ -24,7 +25,8 @@ export const OverlayBox = styled(Box)({
   left: "0",
   width: "100%",
   height: "100%",
-  backgroundColor: "rgba(0, 0, 0, 0.56)",
+  backgroundColor: "black",
+  opacity:"0.85",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -70,12 +72,9 @@ export const Heading = styled(Typography)({
 export const Paragraph = styled(Typography)(({ theme }) => ({
   fontWeight: 500,
   fontSize: "1rem",
-  height: "6.125rem",
-  width: "35.138rem",
   color: "#FFFFFF",
   display: "flex",
   [theme.breakpoints.down("sm")]: {
     fontSize: "0.6rem",
-    width: "25rem",
   },
 }));

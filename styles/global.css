@@ -38,3 +38,13 @@ body {
         padding: 0;
     }
 }
+.iconSize{
+    font-size: 2rem;
+    margin-left: 2rem;
+    }
+    @media (max-width: 600px) {
+        .iconSize{
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            }
+        }

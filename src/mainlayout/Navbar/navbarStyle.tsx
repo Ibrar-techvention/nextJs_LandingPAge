@@ -14,13 +14,14 @@ export const ButtonStyle: any = styled(Button)(({ theme }) => ({
   display: "none",
   color: "white",
   fontWeight: "bold",
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     display: "block",
   },
 }));
 export const MainBox: any = styled(Box)(({ theme }) => ({
   paddingTop: "1rem",
   paddingBottom: "1rem",
+
   width: "92%",
   margin: "auto",
   [theme.breakpoints.down("sm")]: {

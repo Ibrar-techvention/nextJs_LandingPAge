@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MenuItem, Box, Drawer } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import SearchIcon from '@mui/icons-material/Search';
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import Image from "next/image";
@@ -120,8 +121,11 @@ const Navbar = () => {
                         </Stacks>
 
                         <ButtonStyle onClick={handleMenu}>
-                            <MenuIcon />
+                            <MenuIcon className="iconSize"/>
+                            <SearchIcon className="iconSize"/>
                         </ButtonStyle>
+
+                        
                     </ToolBar>
                 </MainBox>
             </Appbar>

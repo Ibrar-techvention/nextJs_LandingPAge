@@ -11,7 +11,7 @@ interface ListProps {
     val: any;
     index: any;
 }
-const ListMap: FC<ListProps> = ({ val, index }) => (
+const ListItems: FC<ListProps> = ({ val, index }) => (
     <Box>
         <List key={index}>
             {val.list.map((sub: any, key: any) => (
@@ -32,4 +32,4 @@ const ListMap: FC<ListProps> = ({ val, index }) => (
     </Box>
 );
 
-export default ListMap;
+export default ListItems;

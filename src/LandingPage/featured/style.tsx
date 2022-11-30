@@ -9,13 +9,13 @@ export const MainBox = styled(Box)(({ theme }) => ({
     alignItems: "center",
     flexDirection: "column",
     [theme.breakpoints.down("md")]: {
-        paddingTop: "6rem",
+        paddingTop: "1rem",
     },
 }));
 export const GridItem = styled(Grid)(({ theme }) => ({
     width: "84%",
     margin: "auto",
-    paddingBottom: "6rem",
+    paddingBottom: "2.5rem",
     [theme.breakpoints.down("lg")]: {
         width: "95%",
     },
@@ -36,7 +36,7 @@ export const Heading = styled(Typography)(({ theme }) => ({
     height: "5.125rem",
     textAlign: "center",
     [theme.breakpoints.down("md")]: {
-        fontSize: "1.2rem",
+        fontSize: "1.9rem",
     },
     [theme.breakpoints.up("xl")]: {
         fontSize: "3.1rem",
@@ -51,11 +51,10 @@ export const Paragraph = styled(Typography)(({ theme }) => ({
     display: "flex",
     [theme.breakpoints.down("sm")]: {
         fontSize: "0.8rem",
-        width: "14rem",
-        marginTop: "-2.8rem",
+        width: "22rem",
     },
     [theme.breakpoints.up("xl")]: {
-        fontSize: "1.8rem",
+        fontSize: "1.5rem",
         width: "53rem",
     },
 }));
@@ -65,9 +64,6 @@ export const PaperStyle = styled(Paper)(({ theme }) => ({
     height: "18.75rem",
     paddingTop: "0.5rem",
     background: "#FFFFFF",
-    [theme.breakpoints.down("sm")]: {
-        paddingTop: "2rem",
-    },
     [theme.breakpoints.down("lg")]: {
         height: "16.75rem",
     },

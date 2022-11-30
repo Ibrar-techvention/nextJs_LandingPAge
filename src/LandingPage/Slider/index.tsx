@@ -1,9 +1,9 @@
-import MainSlider from "./MainSlider";
+import Sliderr from "./Slider";
 
 const index = () => {
     return (
         <>
-            <MainSlider />
+            <Sliderr />
         </>
     );
 };

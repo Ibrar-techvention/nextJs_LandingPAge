@@ -16,7 +16,7 @@ export const Container = styled(Box)(({ theme }) => ({
 }));
 export const Boxes = styled(Box)({
   maxWidth: "85rem",
-  margin: "5rem auto auto  auto",
+  margin: "auto",
 });
 export const TitleBox = styled(Box)(({ theme }) => ({
   display: "flex",

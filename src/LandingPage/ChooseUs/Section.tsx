@@ -51,15 +51,7 @@ const Section = () => {
             </Wrapper>
           </Grid>
 
-          <Grid
-            item
-            sm={6}
-            xs={10}
-            mt={2}
-            // component={motion.div}
-            // variants={insideAnimation}
-            // transition={{ delay: 0.1, type: "tween" }}
-          >
+          <Grid item sm={6} xs={10} mt={2}>
             <Wrappers>
               <RightItem p={3}>
                 <Typography>

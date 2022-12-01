@@ -46,9 +46,6 @@ export const BoxDot1 = styled(Box)(({ theme }) => ({
 export const Left = styled(Box)(({ theme }) => ({
   width: "50%",
   paddingTop: "3.9rem",
-  // [theme.breakpoints.up("xl")]: {
-  //   paddingTop: "7rem",
-  // },
   [theme.breakpoints.down("lg")]: {
     paddingTop: "2.9rem",
     width: "55%",
